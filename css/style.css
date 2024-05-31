@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7ECDE;
+}
+
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+h1{
+font-family: "Pacifico", cursive;
+font-size: 3.125rem;
+font-weight: 500;
+line-height: 3.75rem;
+position: relative;}
+
+h1::after{
+content: "";
+width: 20%;
+height: 1.25rem;
+background-color: #FEC260;
+position: absolute;
+z-index: -1;
+bottom: 0;
+left: 50%;
+transform: translate(-50%,0);
+transition: all 0.5s;
+}
+
+h1:hover::after{
+    height:2.5rem ;
+}
+
+p{
+background-image: linear-gradient(to right , rgb(60, 165, 92) 50%,rgb(181, 172, 73) 50%);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 1.5625rem;
+font-weight: 500;
+line-height: 1.875rem;
+font-family: "Righteous", sans-serif;
+text-align: center;
+}
+
+.form-control:focus{
+box-shadow:0px 0px 7px 2px #fec260;
+border: #d99c39;
+}
+
+#table .btn-warning{
+border: rgb(171, 190, 71);
+    background-color: rgb(171, 190, 71);
+    color: white;
+    padding: 8px 20px;
+}
+
+#table .btn-warning:hover{
+    background-color: rgb(114, 133, 21);
+    border: rgb(29, 34, 5);
+}
+
+#table a{
+    text-decoration: none;
+    color: white;
+}
+
+#table .bg1{
+    background-color: #F8F9FA;
+}
